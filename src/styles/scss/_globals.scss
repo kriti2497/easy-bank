@@ -4,3 +4,56 @@
   box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
 }
+
+.body-sty {
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  &-jc-sa {
+    justify-content: space-around;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-ai-center {
+    align-items: center;
+  }
+}
+
+.mb {
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, $limeGreen, $brightCyan);
+  border: 0;
+  border-radius: 25px;
+  color: white;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+  font-size: 14px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.hide-on-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-on-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
