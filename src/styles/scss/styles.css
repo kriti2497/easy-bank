@@ -221,11 +221,9 @@ img {
   .hero-img {
     flex: 3;
     order: 2;
-    min-height: 660px;
     background-image: url("./../../assets/images/bg-intro-desktop.svg");
     background-position: left top -150px;
     background-size: 140%;
-    overflow: hidden;
   }
 }
 .hero-img::before {
@@ -240,14 +238,14 @@ img {
 }
 @media (min-width: 1024px) {
   .hero-img::before {
-    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: 90%;
-    width: 100%;
-    height: 100%;
+    background-size: 105%;
+    width: 525px;
+    height: 580px;
     position: absolute;
-    top: -75px;
-    left: 100px;
+    top: 0px;
+    right: 0px;
+    background-position-x: 50px;
   }
 }
 
