@@ -83,6 +83,13 @@ button:hover {
   }
 }
 
+.subtext {
+  font-weight: 200;
+  color: hsl(233, 8%, 62%);
+  font-size: large;
+  line-height: 1.5;
+}
+
 .nav {
   padding: 20px;
   position: relative;
@@ -94,8 +101,7 @@ button:hover {
     z-index: 1;
   }
 }
-
-img {
+.nav img {
   width: 141px;
   height: 22px;
 }
@@ -204,7 +210,7 @@ img {
 }
 
 .hero-img {
-  min-height: 280px;
+  min-height: 310px;
   position: relative;
   width: 100%;
   background-image: url("./../../assets/images/bg-intro-mobile.svg");
@@ -267,9 +273,77 @@ img {
   color: hsl(233, 26%, 24%);
 }
 .hero-text p {
-  font-weight: 200;
   margin-bottom: 30px;
-  color: hsl(233, 8%, 62%);
-  font-size: large;
+}
+
+.features-section {
+  background-color: hsl(0, 0%, 98%);
+  padding: 50px 10px;
+}
+@media (min-width: 1024px) {
+  .features-section {
+    padding: 50px 130px;
+  }
+}
+.features-section .title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: hsl(233, 26%, 24%);
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .features-section .title {
+    text-align: left;
+  }
+}
+.features-section .subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+@media (min-width: 1024px) {
+  .features-section .subtitle {
+    text-align: left;
+    width: 70%;
+    padding: 0;
+  }
+}
+.features-section .feature-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+  flex: 1;
+}
+.features-section .features-main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .features-section .features-main {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+}
+.features-section .feature-heading {
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+  font-size: 20px;
   line-height: 1.5;
+}
+.features-section .feature-desc {
+  font-weight: 200;
+  color: hsl(233, 8%, 62%);
+  font-size: 17px;
+  line-height: 1.5;
+}
+@media (min-width: 1024px) {
+  .features-section .feature-desc {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,7 @@
 import "./styles/scss/styles.css";
 
 import Body from "./components/Body";
+import Features from "./components/Features";
 import Header from "./components/Header";
 import { useState } from "react";
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <Header handleOpen={handleHamburgerOpen} openHamburger={openHamburger} />
       <Body openHamburger={openHamburger} />
+      <Features />
     </>
   );
 }

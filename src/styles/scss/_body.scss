@@ -7,7 +7,7 @@
 }
 
 .hero-img {
-  min-height: 280px;
+  min-height: 310px;
   position: relative;
   width: 100%;
   background-image: url("./../../assets/images/bg-intro-mobile.svg");
@@ -68,10 +68,6 @@
     color: $darkBlue;
   }
   p {
-    font-weight: 200;
     margin-bottom: 30px;
-    color: $grayishBlue;
-    font-size: large;
-    line-height: 1.5;
   }
 }
