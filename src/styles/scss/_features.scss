@@ -1,7 +1,7 @@
 .features-section {
-  background-color: $veryLightGray;
+  background-color: $lightGrayishBlue;
   padding: 50px 10px;
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
     padding: 50px 130px;
   }
 
@@ -32,6 +32,12 @@
     gap: 30px;
     padding: 10px;
     flex: 1;
+    @include breakpoint-up(medium) {
+      flex: 1 0 50%;
+    }
+    @include breakpoint-up(large) {
+      flex: 1;
+    }
   }
 
   .features-main {
@@ -40,7 +46,8 @@
     flex-direction: column;
     gap: 20px;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
+      flex-wrap: wrap;
       text-align: left;
       display: flex;
       flex-direction: row;

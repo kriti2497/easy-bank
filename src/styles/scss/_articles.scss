@@ -1,0 +1,96 @@
+.articles-section {
+  background-color: $veryLightGray;
+  padding: 50px 20px 70px;
+  @include breakpoint-up(large) {
+    padding: 50px 130px 70px;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: $darkBlue;
+    text-align: center;
+    @include breakpoint-up(large) {
+      text-align: left;
+    }
+  }
+
+  .articles-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+    column-gap: 28px;
+    padding: 0 20px;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 20px;
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0;
+    }
+  }
+
+  .article-item {
+    background-color: $white;
+    border-radius: 5px;
+  }
+
+  .article-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .article-author {
+    font-weight: 200;
+    color: $grayishBlue;
+    font-size: 12px;
+    line-height: 1.5;
+    @include breakpoint-up(large) {
+      font-size: 10px;
+    }
+  }
+
+  .text-section {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .article-title {
+    font-weight: 300;
+    color: $darkBlue;
+    font-size: 16px;
+    &:hover {
+      background: -webkit-linear-gradient(0deg, $limeGreen, $brightCyan);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+    }
+    @include breakpoint-up(large) {
+      font-size: 15px;
+    }
+  }
+
+  .article-desc {
+    font-weight: 200;
+    color: $grayishBlue;
+    font-size: 14px;
+    line-height: 1.5;
+
+    @include breakpoint-up(large) {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4; /* number of lines to show */
+      -webkit-box-orient: vertical;
+      font-size: 12px;
+    }
+  }
+}

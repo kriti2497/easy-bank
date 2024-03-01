@@ -1,5 +1,6 @@
 import "./styles/scss/styles.css";
 
+import Articles from "./components/Articles";
 import Body from "./components/Body";
 import Features from "./components/Features";
 import Header from "./components/Header";
@@ -16,6 +17,7 @@ function App() {
       <Header handleOpen={handleHamburgerOpen} openHamburger={openHamburger} />
       <Body openHamburger={openHamburger} />
       <Features />
+      <Articles />
     </>
   );
 }
