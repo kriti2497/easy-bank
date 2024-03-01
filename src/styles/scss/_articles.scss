@@ -18,18 +18,24 @@
 
   .articles-div {
     display: grid;
-    grid-template-columns: 1fr;
+    // mobile view: only 1 item per row
+    // grid-template-columns: 1fr;
+
+    // auto-fit items on screen - can be 1, 2, 3 or 4 depending on screen size
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     row-gap: 28px;
     column-gap: 28px;
     padding: 0 20px;
 
     @include breakpoint-up(medium) {
-      grid-template-columns: repeat(2, 1fr);
+      // tablet view: two items per row
+      // grid-template-columns: repeat(2, 1fr);
       padding: 0 20px;
     }
 
     @include breakpoint-up(large) {
-      grid-template-columns: repeat(4, 1fr);
+      // desktop view: 4 items per row
+      // grid-template-columns: repeat(4, 1fr);
       padding: 0;
     }
   }

@@ -382,7 +382,7 @@ button:hover {
 }
 .articles-section .articles-div {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   row-gap: 28px;
   -moz-column-gap: 28px;
        column-gap: 28px;
@@ -390,13 +390,11 @@ button:hover {
 }
 @media (min-width: 640px) {
   .articles-section .articles-div {
-    grid-template-columns: repeat(2, 1fr);
     padding: 0 20px;
   }
 }
 @media (min-width: 1024px) {
   .articles-section .articles-div {
-    grid-template-columns: repeat(4, 1fr);
     padding: 0;
   }
 }
