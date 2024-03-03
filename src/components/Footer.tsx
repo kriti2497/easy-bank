@@ -1,3 +1,4 @@
+import Social from "./Social";
 import facebook from "../assets/images/icon-facebook.svg";
 import facebookhover from "../assets/images/icon-facebook-hover.svg";
 import instagram from "../assets/images/icon-instagram.svg";
@@ -9,12 +10,10 @@ import pinterest from "../assets/images/icon-pinterest.svg";
 import pinteresthover from "../assets/images/icon-pinterest-hover.svg";
 import twitter from "../assets/images/icon-twitter.svg";
 import twitterhover from "../assets/images/icon-twitter-hover.svg";
-import { useState } from "react";
 import youtube from "../assets/images/icon-youtube.svg";
 import youtubehover from "../assets/images/icon-youtube-hover.svg";
 
 const Footer = () => {
-  const [hovered, setHovered] = useState(false);
   const imgsArr = [
     {
       link: "https://www.facebook.com/",
@@ -51,14 +50,7 @@ const Footer = () => {
       </div>
       <div className="social-handles">
         {imgsArr.map((eachSocial: any) => (
-          <a href={eachSocial.link} key={eachSocial.link}>
-            <img
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-              src={hovered ? eachSocial.hoverIcon : eachSocial.icon}
-              alt="logo"
-            />
-          </a>
+          <Social key={eachSocial.link} social={eachSocial} />
         ))}
       </div>
       <div className="footer-links section1">

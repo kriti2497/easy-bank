@@ -66,6 +66,7 @@ button {
   opacity: 1;
   transition: opacity 300ms ease-in-out;
   font-size: 14px;
+  cursor: pointer;
 }
 button:hover {
   opacity: 0.8;
@@ -513,9 +514,6 @@ button:hover {
     width: 20px;
   }
 }
-.footer .social-handles a img:hover {
-  color: red;
-}
 .footer .social-handles a:not(:last-child) {
   margin-right: 20px;
 }
@@ -554,9 +552,11 @@ button:hover {
     margin: 0;
   }
 }
+.footer .invite-bnt {
+  justify-self: right;
+}
 .footer .invite-bnt button {
   font-size: 16px;
-  justify-self: right;
 }
 @media (min-width: 1024px) {
   .footer .invite-bnt button {

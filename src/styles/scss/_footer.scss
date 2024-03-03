@@ -42,9 +42,6 @@
         @include breakpoint-up(large) {
           width: 20px;
         }
-        &:hover {
-          color: red;
-        }
       }
       font-size: 20px;
       &:not(:last-child) {
@@ -90,9 +87,9 @@
   }
 
   .invite-bnt {
+    justify-self: right;
     button {
       font-size: 16px;
-      justify-self: right;
 
       @include breakpoint-up(large) {
         grid-area: invbutton;
