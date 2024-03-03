@@ -41,7 +41,7 @@ const Features = () => {
       </p>
       <div className="features-main">
         {features.map((each: IFeature) => (
-          <div className="feature-item">
+          <div key={each.heading} className="feature-item">
             <div className="feature-icon">
               <img src={each.icon} alt="budget" />
             </div>

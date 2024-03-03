@@ -43,7 +43,7 @@ const Articles = () => {
       <h3 className="title">Latest Articles</h3>
       <div className="articles-div">
         {articles.map((article: IArticle) => (
-          <div className="article-item">
+          <div className="article-item" key={article.title}>
             <div>
               <img className="article-img" src={article.img} alt="title" />
             </div>

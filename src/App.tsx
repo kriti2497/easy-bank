@@ -3,6 +3,7 @@ import "./styles/scss/styles.css";
 import Articles from "./components/Articles";
 import Body from "./components/Body";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import { useState } from "react";
 
@@ -18,6 +19,7 @@ function App() {
       <Body openHamburger={openHamburger} />
       <Features />
       <Articles />
+      <Footer />
     </>
   );
 }

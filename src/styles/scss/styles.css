@@ -462,4 +462,123 @@ button:hover {
     -webkit-box-orient: vertical;
     font-size: 12px;
   }
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  color: hsl(0, 0%, 100%);
+  padding: 40px 80px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr) 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "logo links1 links2 invbutton" "socials links1 links2 invitetext ";
+    justify-items: start;
+    align-items: center;
+  }
+}
+.footer a {
+  color: hsl(0, 0%, 100%);
+}
+.footer .footer-logo {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .footer .footer-logo {
+    grid-area: logo;
+    margin: 0;
+  }
+}
+.footer .social-handles {
+  margin-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .footer .social-handles {
+    grid-area: socials;
+    align-self: end;
+    margin: 0;
+  }
+}
+.footer .social-handles a {
+  font-size: 20px;
+}
+.footer .social-handles a img {
+  width: 30px;
+}
+@media (min-width: 1024px) {
+  .footer .social-handles a img {
+    width: 20px;
+  }
+}
+.footer .social-handles a img:hover {
+  color: red;
+}
+.footer .social-handles a:not(:last-child) {
+  margin-right: 20px;
+}
+.footer .social-handles a:hover {
+  color: hsl(136, 65%, 51%);
+}
+.footer .footer-links a {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  .footer .footer-links a {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 200;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+.footer .footer-links a:hover {
+  color: hsl(136, 65%, 51%);
+}
+@media (min-width: 1024px) {
+  .footer .section1 {
+    grid-area: links1;
+  }
+}
+.footer .section2 {
+  margin-bottom: 35px;
+}
+@media (min-width: 1024px) {
+  .footer .section2 {
+    grid-area: links2;
+    margin: 0;
+  }
+}
+.footer .invite-bnt button {
+  font-size: 16px;
+  justify-self: right;
+}
+@media (min-width: 1024px) {
+  .footer .invite-bnt button {
+    grid-area: invbutton;
+    justify-self: right;
+  }
+}
+.footer .invite-details {
+  margin-top: 15px;
+}
+@media (min-width: 1024px) {
+  .footer .invite-details {
+    grid-area: invitetext;
+    margin: 0;
+    text-align: right;
+    justify-self: right;
+    justify-self: self-end;
+    font-size: 12px;
+    align-self: end;
+    line-height: 25px;
+  }
+}
+.footer .invite-details p {
+  color: hsl(233, 8%, 62%);
 }/*# sourceMappingURL=styles.css.map */
